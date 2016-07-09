@@ -95,10 +95,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        startActivity(intent);
 
 
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+//        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-//        Intent intent = new Intent(SecondActivity.START_ACTION);
-        Intent intent = new Intent("android.intent.action.VOICE_COMMAND");
+        Intent intent = new Intent(SecondActivity.START_ACTION);
+//        Intent intent = new Intent("android.intent.action.MAIN");
         if (v.getId() == R.id.btnPlus) {
             intent.putExtra(SecondActivity.EXTRAS_PARAM1, "Fist button pressed");
         } else if (v.getId() == R.id.btnMinus) {
